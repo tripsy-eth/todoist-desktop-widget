@@ -1,0 +1,25 @@
+[package]
+name = "todoist-desktop-widget"
+version = "0.1.0"
+description = "Always-on-top Todoist widget for Windows"
+authors = ["You"]
+edition = "2021"
+
+[lib]
+name = "todoist_desktop_widget_lib"
+crate-type = ["cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-global-shortcut = "2"
+tauri-plugin-opener = "2"
+tauri-plugin-store = "2"
+tauri-plugin-window-state = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.12", features = ["json", "rustls-tls"] }
+keyring = { version = "3", features = ["windows-native"] }
+
