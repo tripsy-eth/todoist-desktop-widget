@@ -3,5 +3,5 @@
   "identifier": "default",
   "description": "Permissions for the primary widget window",
   "windows": ["main"],
-  "permissions": ["core:default", "global-shortcut:allow-is-registered", "global-shortcut:allow-register", "global-shortcut:allow-unregister"]
+  "permissions": ["core:default", "core:window:allow-start-dragging", "core:window:allow-set-always-on-top", "global-shortcut:allow-is-registered", "global-shortcut:allow-register", "global-shortcut:allow-unregister"]
 }

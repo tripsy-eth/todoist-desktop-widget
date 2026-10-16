@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "test": "node --experimental-strip-types --test src/tasks.test.mjs",
     "build": "tsc --noEmit && vite build",
     "tauri": "tauri"
   },

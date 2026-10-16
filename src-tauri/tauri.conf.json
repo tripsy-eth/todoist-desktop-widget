@@ -4,6 +4,6 @@
   "version": "0.1.0",
   "identifier": "com.todoistwidget.desktop",
   "build": { "beforeDevCommand": "npm run dev", "devUrl": "http://localhost:1420", "beforeBuildCommand": "npm run build", "frontendDist": "../dist" },
-  "app": { "withGlobalTauri": false, "windows": [{ "label": "main", "title": "Todoist", "width": 350, "height": 560, "minWidth": 134, "minHeight": 44, "decorations": false, "transparent": true, "alwaysOnTop": true, "resizable": false, "visible": true, "skipTaskbar": true }] },
-  "bundle": { "active": true, "targets": "nsis" }
+  "app": { "withGlobalTauri": false, "windows": [{ "label": "main", "title": "Todoist", "width": 210, "height": 44, "minWidth": 134, "minHeight": 44, "decorations": false, "transparent": true, "alwaysOnTop": true, "resizable": false, "visible": true, "skipTaskbar": true }] },
+  "bundle": { "active": true, "targets": "nsis", "icon": ["icons/icon.ico"] }
 }
